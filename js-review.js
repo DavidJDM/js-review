@@ -32,7 +32,7 @@ function countBs(phrase) {
         }
     }
 
-    console.log(counter);
+    console.log("In the phrase " + phrase + ", there are " + counter + " B's");
 }
 
 function countChar(phrase, character) {
@@ -44,5 +44,5 @@ function countChar(phrase, character) {
         }
     }
 
-    console.log(counter);
+    console.log("In the phrase " + phrase + ", there are " + counter + " " + character + "'s");
 }
