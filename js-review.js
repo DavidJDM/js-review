@@ -1,6 +1,6 @@
 console.log("Introduction to JavaScript");
 FizzBuzz();
-
+countBs("BaBBy");
 
 function FizzBuzz() {
     var i;
@@ -20,4 +20,16 @@ function FizzBuzz() {
             console.log(i);
         }
     }
+}
+
+function countBs(phrase) {
+    var i;
+    var counter = 0;
+    for(i = 0; i < phrase.length - 1; i++) {
+        if((phrase.charAt(i)) === 'B') {
+            counter++;
+        }
+    }
+
+    console.log(counter);
 }
