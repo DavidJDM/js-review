@@ -1,6 +1,7 @@
 console.log("Introduction to JavaScript");
 FizzBuzz();
 countBs("BaBBy");
+countBs("Bob");
 countChar("Davdd", "d");
 
 function FizzBuzz() {
@@ -24,15 +25,7 @@ function FizzBuzz() {
 }
 
 function countBs(phrase) {
-    var i;
-    var counter = 0;
-    for(i = 0; i < phrase.length; i++) {
-        if((phrase.charAt(i)) === 'B') {
-            counter++;
-        }
-    }
-
-    console.log("In the phrase " + phrase + ", there are " + counter + " B's");
+    countChar(phrase, 'B');
 }
 
 function countChar(phrase, character) {
@@ -44,5 +37,5 @@ function countChar(phrase, character) {
         }
     }
 
-    console.log("In the phrase " + phrase + ", there are " + counter + " " + character + "'s");
+    return console.log("In the phrase " + phrase + ", there are " + counter + " " + character + "'s");
 }
